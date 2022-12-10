@@ -1,0 +1,95 @@
+
+            .container-all {
+                display: flex;
+                align-items: stretch;
+            }
+            
+            #sidebar {
+                width: 280px;
+                height: 90vh;
+                background-color: alpha;
+                color: #000000;
+                transition: 1s;
+            }
+            
+            #sidebar.active {
+                margin-left: -230px;
+            }
+            
+            .container-right {
+				
+                width: 100%;
+                height: 90vh;
+                text-align: center;
+                padding: 30px;
+            }
+            
+            .collapse-btn {
+                position: relative;
+                top: 5%;
+                left: 240px;
+                background-color: #467500;
+                color: white;
+                border: none;
+                font-size: 30px;
+                padding: 5px;
+            }
+            
+            .collapse-btn:hover {
+                background-color: #64A600;
+                transition: 0.4s;
+            }
+            
+            #sidebar p {
+                text-align: center;
+                font-size: 30px;
+                font-style: italic;
+				font-weight: bold;
+                padding: 10px;
+            }
+            
+            #sidebar ul li a {
+                padding: 10px;
+                font-size: 20px;
+                display: block;
+                text-decoration: none;
+                color: #000000;
+            }
+            
+            #sidebar ul li a:hover {
+                color: #64A600;
+                background:	#844200;
+            }
+            
+            .fas,
+            .far,
+            .fab {
+                float: right;
+            }
+            
+            ul ul li a {
+                background-color: alpha;
+                font-size: 20px;
+                font-style: italic;
+            }
+            
+            @media (max-width:600px) {
+                #sidebar {
+                    margin-left: -100px;
+                    width: 150px;
+                    font-size: 20px;
+                }
+                .collapse-btn {
+                    position: relative;
+                    top: 1%;
+                    left: 110px;
+                }
+                #sidebar.active {
+                    margin-left: 0px;
+                }
+                #sidebar ul p {
+                    font-size: 18px;
+                    text-align: left;
+                }
+            }
+      
